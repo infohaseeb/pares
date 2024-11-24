@@ -7,7 +7,7 @@ body {
 }
 
 /*  Nvbar and header design */
-/* hasee Styling */
+/* hasees Styling */
 
 
 .navbar-light .navbar-brand {
@@ -27,7 +27,7 @@ body {
 .navbar-light .navbar-nav .nav-link {
     color:black;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .bg-light {
@@ -798,4 +798,112 @@ html {
     #team .col-md-4 {
         max-width: 50%;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Therapy Section Styles */
+#therapy-sessions {
+    background-color: white;
+}
+
+/* Section Title */
+#therapy-sessions h2, #therapy-sessions h3 {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing: 1.2px;
+    animation: fadeInDown 1s ease-in-out;
+    font-size: 2.5rem;
+}
+
+/* Therapy Card Styling */
+.therapy-card, .package-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.therapy-card:hover, .package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Session Details Styling */
+.card-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+    animation: fadeIn 0.8s ease-in-out;
+    font-weight: bold;
+}
+
+.session-price, .session-duration, .package-price {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Rounded Corners for Cards */
+.card {
+    border-radius: 12px;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.consultation-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.consultation-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
