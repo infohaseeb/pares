@@ -1,0 +1,874 @@
+/* General Styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.bg-light {
+    background-color: white !important;
+  }
+
+/* Header Styling */
+header {
+    background-color: #f8f9fa; /* Light background for header */
+    padding: 20px 0;
+}
+
+/* Adjust the container layout for better alignment */
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Address and Phone Section Styling */
+.contact-info {
+    font-size: 1.1em;
+    color: #333;
+    text-align: left;
+}
+
+.contact-info h5 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info .email {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info .email:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Logo Section Styling */
+.logo-name {
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Navbar Styling */
+.navbar {
+    margin-top: 10px;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    font-size: 1.2em;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.navbar-toggler {
+    border-color: #007bff;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+/* Book Now Button */
+.btn-danger {
+    background-color: #007bff;
+    border-color:#007bff;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Hide contact-info (address, phone, and email) and social-icons on mobile */
+    .contact-info,
+    .social-icons {
+        display: none;
+    }
+
+    /* Adjust the logo size for smaller screens */
+    .logo-name img {
+        max-height: 80px;
+    }
+
+    /* Adjust button size for mobile */
+    .btn-danger {
+        width: 50%;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+/* Professional Image Slider Styling */
+.image-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 500px; /* Set height to 500px for a professional look */
+    object-fit: cover; /* Ensures the image covers the slider without distortion */
+    border-radius: 15px;
+}
+
+/* Custom Styling for Indicators */
+.carousel-indicators li {
+    background-color: #007bff; /* Professional blue tone */
+    border-radius: 50%;
+}
+
+/* Fade Effect for Smooth Transition */
+.carousel-fade .carousel-item {
+    transition: opacity 0.8s ease-in-out;
+}
+
+/* Container fluid for edge-to-edge effect */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 300px; /* Reduce height for smaller screens */
+    }
+}
+
+.about, .values, .services, .gallery, .flip-circles, .enroll, footer {
+    text-align: center;
+}
+
+
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    perspective: 1000px;
+    margin: 0 auto;
+}
+
+.circle-front, .circle-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.6s;
+}
+
+.circle-front {
+    background: #ccc;
+}
+
+.circle-back {
+    background: #ff0000;
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.circle:hover .circle-front {
+    transform: rotateY(180deg);
+}
+
+.circle:hover .circle-back {
+    transform: rotateY(0deg);
+}
+
+/* General Footer Styling */
+/* Footer Styling */
+footer {
+    padding: 40px 0;
+    background-color: #f8f9fa;
+}
+
+.footer-content {
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-form-section form {
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Input focus animation */
+.contact-form-section input:focus,
+.contact-form-section select:focus,
+.contact-form-section textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Button hover effect */
+.contact-form-section .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Newsletter input styling */
+.footer-newsletter .form-control {
+    border-radius: 5px 0 0 5px;
+}
+
+.footer-newsletter .btn {
+    border-radius: 0 5px 5px 0;
+}
+
+
+
+/* Testimonial Section */
+/* Testimonial Section */
+.testimonials {
+    padding: 60px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #f8f9fa, White); /* Gradient background */
+    width: 100%; /* Full width */
+}
+
+.testimonials h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.carousel-inner {
+    width: 100%; /* Ensure carousel takes up the full width of the container */
+}
+
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+.testimonial {
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: scale(0.98);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #666;
+}
+
+.testimonial h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+.testimonial:hover {
+    transform: scale(1);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /* Hover effect with glow */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    display: none; /* Hide arrows */
+}
+
+/* Optional Animation: Fade In and Slide */
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.testimonial {
+    animation: fadeInSlide 0.6s ease-out forwards;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .testimonials h2 {
+        font-size: 2rem;
+    }
+
+    .testimonial p {
+        font-size: 1rem;
+    }
+
+    .testimonial h5 {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+/* Additional CSS for the Services Section */
+.services {
+    background-color: #ffffff; /* Light background color */
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.service-item {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.service-image img {
+    width: 200px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    object-fit: cover; /* Crop images to fill the container */
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+
+/* Additional CSS for the about Section */
+
+
+/* About Us Section Styling */
+.about {
+    background-color: white; /* Light background for the About section */
+    padding: 60px 0; /* Add padding for space around the content */
+    border-radius: 10px; /* Rounded corners for the container */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-image,
+    .about-text {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+ /* Additional CSS for the values Section */
+
+
+.values {
+    background-color: #f9f9f9; /* Light background color */
+    text-align: center;
+}
+
+.values h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.value-item {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #ffffff; /* White background for each value item */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.value-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.value-item h3 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: #007bff; /* Bootstrap primary color */
+    margin-bottom: 15px;
+}
+
+.value-item p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 15px; /* Some padding for the text */
+}
+
+.value-image img {
+    width: 180px; /* Consistent width */
+    height: 180px; /* Consistent height */
+    object-fit: cover; /* Crop images to fill the container */
+    border-radius: 50%;
+    margin: 0 auto 20px auto; /* Center the image with margin */
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.value-item:hover .value-image img {
+    transform: scale(1.1); /* Slightly enlarge image on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Larger shadow effect */
+}
+
+
+
+
+
+
+/* Additional CSS for the flip  Section */
+
+/* Circle styling with Bootstrap */
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    perspective: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Gradient Backgrounds for front and back */
+.circle-front {
+    background: linear-gradient(45deg, #1a971a, #674bce); /* Gradient background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.6s, box-shadow 0.3s ease-in-out;
+}
+
+.circle-back {
+    background: linear-gradient(45deg, #91ce21, #9e0a17); /* Gradient background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: normal;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.6s, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effects: flips and animated glowing */
+.circle:hover .circle-front {
+    transform: rotateY(180deg);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7); /* Glowing effect */
+}
+
+.circle:hover .circle-back {
+    transform: rotateY(0deg);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7); /* Glowing effect */
+}
+
+/* Adding star animation effect */
+@keyframes stars {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.5), 0 0 60px rgba(255, 255, 255, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.2);
+    }
+}
+
+.circle:hover {
+    animation: stars 1.5s infinite; /* Starry glow animation */
+}
+
+
+
+/* Additional CSS for the enrol Section */
+
+/* Enroll Section */
+/* Enroll Section */
+.enroll {
+    padding: 60px 0;
+    color: #fff; /* White text color */
+}
+
+.enroll .container {
+    background: linear-gradient(135deg, #c6cbcc, #0072ff); /* Gradient background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Optional: Add shadow to the container */
+}
+
+.enroll h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.enroll .form-control {
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.8); /* Light transparent background */
+    border: 1px solid #ddd;
+}
+
+.enroll .form-control:focus {
+    border-color: #ebeef1;
+    box-shadow: 0 0 10px rgba(0, 114, 255, 0.5);
+}
+
+.enroll button {
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    background-color: #0072ff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.enroll button:hover {
+    background-color: #0056b3;
+}
+
+/* Animation for form appearance */
+.enroll form {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Sliding Image Section */
+.sliding-images {
+    position: relative;
+    padding: 40px 0;
+    background-color: white;
+    text-align: center;
+}
+
+
+
+.slider {
+    overflow: hidden; /* Hides images outside of the container */
+    position: relative;
+}
+
+.slider-images {
+    display: flex; /* Arrange images horizontally */
+    animation: slide 15s infinite linear; /* Slide animation for 15 seconds */
+}
+
+.image {
+    min-width: 300px; /* Set the image width */
+    margin: 0 10px; /* Space between images */
+    transition: transform 0.3s ease-in-out; /* Smooth transform */
+}
+
+.image img {
+    width: 100%;
+    height: 300px; /* Set the height of the image */
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Animation for sliding effect */
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Start from the left */
+    }
+    100% {
+        transform: translateX(-100%); /* Slide to the left */
+    }
+}
+
+/* Hover effect for images */
+.image:hover {
+    transform: scale(1.1); /* Slight zoom effect when hovering */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Responsiveness for mobile screens */
+@media (max-width: 767px) {
+    .image img {
+        height: 200px; /* Adjust image height for small screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+/* Modal Custom Styling */
+.modal-content {
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+/* Custom animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Modal Header Custom Styling */
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.modal-body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+
+
+
+
+
+/* Custom styles for the modal */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.modal-body .form-group {
+    margin-bottom: 15px;
+}
+
+
+
+
+/* Team Section Styles */
+#team {
+    background-color: white;
+}
+
+/* Styling for the team member card */
+.team-member-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Rounded images for team members */
+.team-member-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member-card img:hover {
+    transform: scale(1.1);
+}
+
+/* Social media links styling */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 5px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 767.98px) {
+    #team .col-md-4 {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #team .col-md-4 {
+        max-width: 50%;
+    }
+}
