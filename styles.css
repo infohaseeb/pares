@@ -10,10 +10,24 @@ body {
 /* hasee Styling */
 
 
+.navbar-light .navbar-brand {
+    color: #007bff;
+    font-size: 2em;
+    font-weight: bold;
+}
+
 .navbar-nav .nav-link {
     font-size: 1.2em;
     padding: 10px 20px;
     transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color:black;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .bg-light {
@@ -87,7 +101,7 @@ header {
 /* Navbar Links */
 .navbar-nav .nav-link {
     font-size: 1.2em;
-    color: #333;
+    color: black;
     text-transform: uppercase;
 }
 
@@ -112,9 +126,10 @@ header {
 .btn-danger {
     background-color: #007bff;
     border-color:#007bff;
-    font-size: 1.1em;
+    font-size: 1.3em;
     padding: 10px 20px;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 .btn-danger:hover {
@@ -254,6 +269,43 @@ footer {
 
 
 
+.footer-copyright{
+    font-size: 1.2rem;
+    color: black;  
+}
+
+
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+
+.footer-newsletter .form-control {
+    font-size: 1.3rem;
+}
+
+.btn-primary1 {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 1.3rem; /* Adjusted to 1.3rem */
+    color: white;
+    font-weight: bold;
+}
+
+.col-121 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 /* Testimonial Section */
 .testimonials {
     padding: 60px 0;
@@ -266,7 +318,7 @@ footer {
     margin-bottom: 30px;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #333;
+    color: black;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -292,7 +344,7 @@ footer {
     font-size: 1.3rem;
     margin-bottom: 20px;
     font-style: italic;
-    color: #666;
+    color:black;
 }
 
 .testimonial h5 {
@@ -352,7 +404,7 @@ footer {
 .services h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #333;
+    color: black;
 }
 
 .service-item {
@@ -423,7 +475,7 @@ footer {
 .values h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #333;
+    color: black;
     margin-bottom: 40px;
 }
 
@@ -451,7 +503,7 @@ footer {
 
 .value-item p {
     font-size: 1rem;
-    color: #555;
+    color: black;
     padding: 0 15px; /* Some padding for the text */
 }
 
@@ -654,14 +706,25 @@ html {
     border-bottom: none;
 }
 
+
+
+
+.close {
+
+    font-size: 3rem;
+}
+
+
 .modal-title {
     font-weight: bold;
     color: #007bff;
+    font-size: 2rem;
 }
 
 .modal-body {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6;
+    font-weight:bold;
 }
 
 .modal-footer {
@@ -669,7 +732,7 @@ html {
 }
 
 
-/*  pop up Custom styles for the modal */
+/*  pop up  bookingCustom styles for the modal */
 .modal-content {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
