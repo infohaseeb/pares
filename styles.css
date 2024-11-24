@@ -35,7 +35,7 @@ header {
 /* Address and Phone Section Styling */
 .contact-info {
     font-size: 1.1em;
-    color: #333;
+    color: black;
     text-align: left;
 }
 
@@ -200,18 +200,6 @@ header {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* General Footer Styling */
 /* Footer Styling */
 footer {
@@ -300,14 +288,14 @@ footer {
 }
 
 .testimonial p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 20px;
     font-style: italic;
     color: #666;
 }
 
 .testimonial h5 {
-    font-size: 1.1rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #007bff; /* Bootstrap primary color */
 }
@@ -379,13 +367,14 @@ footer {
 
 .service-item h3 {
     margin-top: 15px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #007bff; /* Bootstrap primary color */
+    font-weight: bold;
 }
 
 .service-item p {
     font-size: 1rem;
-    color: #555;
+    color: black;
 }
 
 .service-image img {
@@ -453,9 +442,10 @@ footer {
 
 .value-item h3 {
     margin-top: 20px;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #007bff; /* Bootstrap primary color */
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .value-item p {
@@ -524,7 +514,7 @@ footer {
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: normal;
     border-radius: 50%;
     position: absolute;
@@ -699,6 +689,7 @@ html {
 /* Team Section Styles */
 #team {
     background-color: white;
+    font-size: 1.1rem;
 }
 
 /* Styling for the team member card */
@@ -725,7 +716,12 @@ html {
     transform: scale(1.1);
 }
 
-
+.team-member-card h5 {
+    font-size: 1.7rem;
+    margin-top: 20px;
+    color: #007bff;
+    font-weight: bold;
+}
 
 /* Media Queries for responsiveness */
 @media (max-width: 767.98px) {
