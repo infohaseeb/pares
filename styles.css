@@ -221,17 +221,69 @@ header {
 footer {
     padding: 40px 0;
     background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+    max-width: 1200px; /* Set maximum width */
+    margin: 0 auto; /* Center the footer */
+    width: 100%; /* Ensure responsiveness */
 }
 
+/* Footer content section */
 .footer-content {
     transition: transform 0.3s ease-in-out;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
 }
 
+
+
+
+.col-121 {
+    font-weight: bold;
+    color: black;
+    flex: 0 0 100%;
+    max-width: 100%;}
+
+/* Footer navigation links */
+footer .footer-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer .footer-link:hover {
+    color: #0056b3;
+}
+
+/* Footer headings */
+footer h5 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: bold;
+}
+
+
+
+/* Language Selection Styling */
+#language-select {
+    font-size: 1rem;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* Contact Form Section */
 .contact-form-section form {
     animation: fadeInUp 0.8s ease-in-out;
 }
 
-/* Animation */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -243,7 +295,17 @@ footer {
     }
 }
 
-/* Input focus animation */
+/* Input and Textarea Styles */
+.contact-form-section input,
+.contact-form-section select,
+.contact-form-section textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
 .contact-form-section input:focus,
 .contact-form-section select:focus,
 .contact-form-section textarea:focus {
@@ -251,60 +313,80 @@ footer {
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
 
-/* Button hover effect */
+/* Button Styling */
+.contact-form-section .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+}
+
 .contact-form-section .btn-primary:hover {
     background-color: #0056b3;
     border-color: #004085;
 }
 
-/* Newsletter input styling */
-.footer-newsletter .form-control {
-    border-radius: 5px 0 0 5px;
-}
-
-.footer-newsletter .btn {
-    border-radius: 0 5px 5px 0;
-}
-
-
-
-
-.footer-copyright{
+/* Book Buttons */
+.btn-lg {
+    padding: 10px 20px;
     font-size: 1.2rem;
-    color: black;  
+    border-radius: 5px;
+    margin: 10px 5px;
 }
 
 
 
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    font-size: 1.3rem;
-    font-weight: bold;
+/* Footer Bottom Section */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 20px;
 }
 
-
-
-.footer-newsletter .form-control {
-    font-size: 1.3rem;
+.footer-bottom small {
+    color: #555;
 }
 
-.btn-primary1 {
-    background-color: #007bff;
-    border-color: #007bff;
-    font-size: 1.3rem; /* Adjusted to 1.3rem */
-    color: white;
-    font-weight: bold;
-}
-
-.col-121 {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
+/* Footer Copyright Section */
+.footer-copyright {
+    font-size: 1rem;
     color: black;
-    font-weight: bold;
-    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
 }
+
+/* Footer Logo Section */
+.footer-logo img {
+    max-height: 50px;
+}
+
+/* Mobile Responsiveness: Adjust text sizes for smaller screens */
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 10px;
+    }
+
+    footer h5 {
+        font-size: 1rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .btn-lg {
+        width: 100%;
+    }
+}
+
+
+
+
 
 /* Testimonial Section */
 .testimonials {
@@ -440,79 +522,131 @@ footer {
 }
 
 
+.service-points {
+    font-size: 1rem;
+    color: black;
+    padding-left: 20px; /* Adjust indentation for the points */
+    list-style-type: disc; /* Standard bullet points */
+}
+
+.service-points li {
+    margin-bottom: 10px; /* Add spacing between points */
+}
+
+
+
+
+
+
 
 
 
 /*  CSS for the about Section */
 
 /* About Us Section Styling */
+
+
 .about {
-    background-color: white; /* Light background for the About section */
-    padding: 60px 0; /* Add padding for space around the content */
-    border-radius: 10px; /* Rounded corners for the container */
+    background-color: #f9f9f9; /* Subtle light background */
+    color: #333; /* Neutral text color */
+    margin-top: -50px;
+}
+
+.about h2 {
+    color: #333;
+}
+
+.about p {
+    color: #555;
+}
+
+.about-points {
+    font-size: 1rem;
+    color: #333;
+}
+
+.about-points li {
+    margin-bottom: 10px;
+}
+
+.about-image img {
+    border-radius: 10px; /* Smooth rounded edges for the image */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow effect */
 }
 
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .about-image,
-    .about-text {
-        text-align: center;
-    }
-}
 
-
-
-
- /* Additional CSS for the values Section */
-
-
+/* Additional CSS for the values Section */
 .values {
-    background-color: white; /* Light background color */
+    background-color: white; /* Light grey background for the whole section */
     text-align: center;
 }
 
 .values h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: black;
+    color: #343a40; /* Dark grey for heading */
     margin-bottom: 40px;
 }
 
 .value-item {
     text-align: center;
     padding: 20px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     background-color: #ffffff; /* White background for each value item */
     border-radius: 10px;
     margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .value-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
 }
 
 .value-item h3 {
     margin-top: 20px;
-    font-size: 2rem;
-    color: #007bff; /* Bootstrap primary color */
+    font-size: 1.8rem;
+    color: #007bff; /* Bootstrap primary color for subheadings */
     margin-bottom: 15px;
     font-weight: bold;
 }
 
-.value-item p {
+.value-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 20px;
+}
+
+.value-point {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #f1f1f1; /* Light grey background for each point box */
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+}
+
+.arrow {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #007bff; /* Arrow color */
+}
+
+.value-point p {
     font-size: 1rem;
-    color: black;
-    padding: 0 15px; /* Some padding for the text */
+    color: #6c757d; /* Muted color for paragraph text */
+    margin: 0;
 }
 
 .value-image img {
-    width: 180px; /* Consistent width */
-    height: 180px; /* Consistent height */
+    width: 150px; /* Consistent width */
+    height: 150px; /* Consistent height */
     object-fit: cover; /* Crop images to fill the container */
     border-radius: 50%;
-    margin: 0 auto 20px auto; /* Center the image with margin */
+    margin: 0 auto 20px auto; /* Center the image */
     display: block;
     transition: transform 0.3s ease-in-out;
 }
@@ -526,24 +660,23 @@ footer {
 
 
 
-
 /* Additional CSS for the flip  Section */
 
-/* Circle styling with Bootstrap */
+/* Flip Circle Styling */
 .circle {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    perspective: 1000px;
+    perspective: 1000px; /* Enables 3D perspective */
     margin: 0 auto;
     overflow: hidden;
     position: relative;
     transition: transform 0.6s ease-in-out;
 }
 
-/* Gradient Backgrounds for front and back */
+/* Front Side Styling */
 .circle-front {
-    background: linear-gradient(45deg, #1a971a, #674bce); /* Gradient background */
+    background: linear-gradient(45deg, #1a971a, #674bce); /* Gradient for the front */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -554,15 +687,16 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    backface-visibility: hidden;
+    backface-visibility: hidden; /* Hides the back when viewed from the front */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.6s, box-shadow 0.3s ease-in-out;
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 
+/* Back Side Styling */
 .circle-back {
-    background: linear-gradient(45deg, #91ce21, #9e0a17); /* Gradient background */
+    background: linear-gradient(45deg, #91ce21, #9e0a17); /* Gradient for the back */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -573,7 +707,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /* Initially rotated out of view */
     backface-visibility: hidden;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.6s, box-shadow 0.3s ease-in-out;
@@ -581,33 +715,34 @@ footer {
     height: 100%;
 }
 
-/* Hover effects: flips and animated glowing */
+/* Hover Effects for Flipping and Glow */
 .circle:hover .circle-front {
-    transform: rotateY(180deg);
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7); /* Glowing effect */
+    transform: rotateY(180deg); /* Flip the front out */
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7); /* Glow effect on hover */
 }
 
 .circle:hover .circle-back {
-    transform: rotateY(0deg);
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7); /* Glowing effect */
+    transform: rotateY(0deg); /* Flip the back into view */
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7); /* Glow effect on hover */
 }
 
-/* Adding star animation effect */
+/* Starry Glow Animation */
 @keyframes stars {
     0% {
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
     }
     50% {
-        box-shadow: 0 0 30px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.5), 0 0 60px rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.5);
     }
     100% {
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
     }
 }
 
 .circle:hover {
-    animation: stars 1.5s infinite; /* Starry glow animation */
+    animation: stars 1.5s infinite; /* Apply the glowing animation */
 }
+
 
 
 
