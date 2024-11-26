@@ -710,9 +710,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div><br>
          
         </div>
-        <section id="visitor-info">
-            <p id="visitor-location">Locating...</p>
-        </section>
+        
     </div>
     
 </footer>
@@ -867,33 +865,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </div>
 
-    
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // Fetching location using ipinfo.io to get country
-        fetch('https://ipinfo.io/json')
-            .then(response => response.json())
-            .then(data => {
-                // If data is successfully fetched, display country
-                if (data && data.country) {
-                    const country = data.country || 'Unknown Country';
 
-                    // Display country name
-                    const locationElement = document.getElementById('visitor-location');
-                    locationElement.textContent = `You are visiting from ${country}`;
-                } else {
-                    // If data is unavailable, show a default message
-                    document.getElementById('visitor-location').textContent = 'Could not determine your location';
-                }
-            })
-            .catch(error => {
-                // If there's an error fetching data, display a message
-                console.error('Error fetching location:', error);
-                document.getElementById('visitor-location').textContent = 'Could not determine your location';
-            });
-    });
-</script>
+
+
 
 </body>
 </html>
