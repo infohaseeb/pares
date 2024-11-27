@@ -7,7 +7,7 @@ body {
 }
 
 /*  Nvbar and header design */
-/* hasees1 Styling */
+/* hasees Styling */
 
 
 .navbar-light .navbar-brand {
@@ -133,8 +133,8 @@ header {
 }
 
 .btn-danger:hover {
-    background-color: #c82333;
-    border-color: #c82333;
+    background-color: #D54B4A;
+    border-color: #D54B4A;
 }
 
 /* Responsive Adjustments */
@@ -676,7 +676,7 @@ footer h5 {
 
 /* Front Side Styling */
 .circle-front {
-    background: linear-gradient(45deg, #1a971a, #674bce); /* Gradient for the front */
+    background: linear-gradient(45deg, #00c6ff, #0072ff); /* Gradient for the front */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -696,7 +696,7 @@ footer h5 {
 
 /* Back Side Styling */
 .circle-back {
-    background: linear-gradient(45deg, #91ce21, #9e0a17); /* Gradient for the back */
+    background: linear-gradient(45deg, #47BAB9, #B299CC);/* Gradient for the back */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1042,7 +1042,6 @@ html {
     background-color: #0056b3;
     transform: scale(1.05);
 }
-
 
 
 
