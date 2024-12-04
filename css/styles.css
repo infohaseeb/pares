@@ -1058,3 +1058,27 @@ html {
 
 
 
+/* Social Media Icons */
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-item:hover {
+    transform: scale(1.2); /* Slight zoom-in effect on hover */
+    opacity: 0.8; /* Slight opacity change on hover */
+}
