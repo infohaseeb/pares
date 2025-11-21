@@ -600,29 +600,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
+<!-- Shift Notice Popup -->
+<div class="modal fade" id="shiftNoticeModal" tabindex="-1" role="dialog" aria-labelledby="shiftNoticeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" style="text-align:center;">
+          
+          <div class="modal-header bg-primary text-white">
+              <h5 class="modal-title">Important Announcement</h5>
+              <button type="button" class="close text-white" data-dismiss="modal">
+                  <span>&times;</span>
+              </button>
+          </div>
+          
+          <div class="modal-body">
+              <h4>ParesCenter.com has shifted!</h4>
+              <p>
+                  We are now live at:<br><br>
+                  <strong style="color:#d00; font-size:1.3rem;">PARES.pk</strong><br>
+                  with a fresh new website experience!
+              </p>
+          </div>
 
-
-<!-- Welcome Popup Modal -->
-<div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="welcomeModalLabel">Welcome to PARES!</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body text-center">
-                <p>At PARES (Physiotherapy, Autism Rehabilitation, and Education Services)</p>
-                <h4>Transformative Physiotherapy & Autism Support Awaits You!</h4>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-danger ml-auto" data-toggle="modal" data-target="#bookNowModal">Book Now</button>
-            </div>
-        </div>
-    </div>
+          <div class="modal-footer">
+              <a href="https://pares.pk" class="btn btn-success" target="_blank">Visit New Website</a>
+          </div>
+      </div>
+  </div>
 </div>
-
 
 
 
@@ -739,8 +743,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
+<script>
+  $(document).ready(function(){
+      $('#shiftNoticeModal').modal('show');
+  });
+</script>
 
     
 
 </body>
 </html>
+
